@@ -150,10 +150,13 @@ textarea::selection{
 #reload img{
     height: 25px;
     width: 25px;
+        transform: rotate(0deg)
+            scale(1);
 }
 
 #reload:hover img{
-    animation: rotateabit 0.2s ease;
+    transform: rotate(30deg)
+        scale(1.1);
 }
 
 #reload:active img{
@@ -175,17 +178,6 @@ textarea::selection{
     }
 }
 
-@keyframes rotateabit {
-    50% {
-        transform: rotate(30deg)
-            scale(1.1)
-    }
-
-    100% {
-        transform: rotate(0deg)
-            scale(1)
-    }
-}
 
 
 
